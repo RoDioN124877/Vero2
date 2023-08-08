@@ -3,3 +3,31 @@
     font-size: $fs;
     line-height: $lh;
 }
+.pod_cherk_b {
+	position: relative;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.pod_cherk_b:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #000000;
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+.pod_cherk_b:hover:after,
+.pod_cherk_b:focus:after {
+	width: 100%; 
+}
+
+.scale{
+    &:hover{
+        transition: 0.7s;
+        transform: scale(1.1);          
+    }
+}

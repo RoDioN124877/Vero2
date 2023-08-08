@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/st.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Мальдивы</title>
+</head>
+<body class="d__body">
+    <section class="get__call__conteiner" id="get__call__conteiner">
+        <div class="get__call">
+          <div class="get__call__header">
+            <div class="text">
+              <h2>Рабочий график 24/7</h2>
+              <p>Укажите время и свой номер ниже</p>
+              <p>И мы перезвоним вам в удобное вам время</p>
+            </div>
+            <img src="../../../img/get_call/work_icon.png" alt="">
+          </div>
+          <div class="get__call__main">
+            <form onsubmit="event.preventDefault();checkForm(this)" id="mane_form" action="../../../php/teleg.php" method="post">
+              <select name="city" id="city_s">
+                <option value="Астана">Астана</option>
+              </select>
+              <input name="phone" data-tel-input type="tel" id="number_s" placeholder="Телефон">
+              <select name="time" id="time_s">
+                <option value="Любое">Перезвонить в любое время</option>
+                <option value="Утро">Перезвонить утром</option>
+                <option value="Обед">Перезвонить в обед</option>
+                <option value="Вечер">Перезвонить вечером</option>
+              </select>
+              <button>Заказать звонок</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <header>
+            <div class="header__left">
+                <div class="log"><img src="../../../img/header/logo_l.png" alt=""></div>
+                <nav class="navbar navbar-expand-lg navbar__custom">
+                  <div class="container-fluid">               
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../../../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../../stock.html">Акции</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Направления
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../tr/tr.html"><img class="travel__img" src="../../../img/travel/tr.png" alt="">Турция</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../eg/eg.html"><img class="travel__img" src="../../../img/travel/eg.png" alt="">Египет</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../th/th.html"><img class="travel__img" src="../../../img/travel/th.png" alt="">Тайланд</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../ae/ae.html"><img class="travel__img" src="../../../img/travel/ae.png" alt="">ОАЕ</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../es/es.html"><img class="travel__img" src="../../../img/travel/es.png" alt="">Испания</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../cz/cz.html"><img class="travel__img" src="../../../img/travel/cz.png" alt="">Чехия</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../ve/ve.html"><img class="travel__img" src="../../../img/travel/ve.png" alt="">Вьетнам</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../kz/kz.html"><img class="travel__img" src="../../../img/travel/kz.png" alt="">Казахстан</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../mv/mv.html"><img class="travel__img" src="../../../img/travel/mv.png" alt="">Мальдивы</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../my/my.html"><img class="travel__img" src="../../../img/travel/my.png" alt="">Малазия</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../do/do.html"><img class="travel__img" src="../../../img/travel/do.png" alt="">Доминикана</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../ka/ka.html"><img class="travel__img" src="../../../img/travel/ka.png" alt="">Катар</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            О нас
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../about/company.html"><img class="about__img" src="../../../img/icons/company.png" alt="">О компании</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../about/partners.html"><img class="about__img" src="../../../img/icons/partners.png" alt="">Партнеры</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../../about/reviews.html"><img class="about__img" src="../../../img/icons/revie.png" alt="">Отзывы</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </nav>
+            </div>
+            <div class="header___right"> 
+              <nav>
+                <ul>
+                  <li><a class="scale" target="_blank" href="https://t.me/verotourkz"><img src="../../../img/header/telegram.png" alt=""></a></li>
+                  <li><a class="scale" target="_blank" href="https://api.whatsapp.com/send/?phone=77055179432&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+%D0%BF%D0%B8%D1%88%D1%83+%D1%81+%D1%81%D0%B0%D0%B9%D1%82%D0%B0+VeroTour%2C+%D1%85%D0%BE%D1%82%D0%B5%D0%BB+%D0%B1%D1%8B+%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5+%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C+%D0%BE+%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D1%85+%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D1%85&type=phone_number&app_absent=0"><img src="../../../img/header/whatsupp.png" alt=""></a></li>
+                  <li><a class="scale" target="_blank" href="https://www.instagram.com/vero.tour.kz/"><img src="../../../img/header/inst.png" alt=""></a></li>
+                  <li><a href="tel:+77055179432" class="phone pod_cherk_b">8(705)517-94-32</a></li>
+                </ul>
+              </nav>
+              <button id="get__call__btn">заказать звонок</button>
+            </div>
+      </header>
+      <main class="main">
+          <section class="main__header">
+            <img src="../../../img/travel/mv.png" alt="">
+            <div class="main__header__txt">
+              <h2>Мальдивы (Maldives)</h2>
+              <h6>Страны</h6>
+            </div>
+          </section>
+          <section class="main__info">
+            <div class="main__info__header">
+              <h6>Мальдивы – одно из уникальных островных государств планеты. Об отдыхе на этих благословенных островах с удовольствием делятся путешественники всего мира! Яркость увиденных здесь пейзажей впечатывается в сетчатку, заряжая солнцем и энергией на весь год, а пережитые на Мальдивах эмоции долго хранятся в памяти, возвращаясь в наших снах и дневных грезах. И, конечно, в наших мечтах и планах, в разговорах с любимыми и друзьями. Вся нижеуказанная информация касательно данной страны, включая информацию в "Памятке туриста" несёт ознакомительный характер и НЕ может рассматриваться как руководство. Подробную информацию необходимо уточнять у менеджеров либо у соответствующих посольств.</h6>
+            </div>
+            <div class="main__info__centre">
+              <h3>Мальдивы . Элитный отдых на белоснежных пляжах</h3>
+              <h6>Мальдивы самый райский уголок нашей планеты. С первых минут туристы чувствуют атмосферу релакса и неповторимой красоты. Визитная карточка страны - пляжи, устланные мелким, как пудра, песком. Отдых на Мальдивах не просто зарядит силами, но и подарит романтическое настроение.</h6>
+            </div>
+            <div class="main__info__video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yUXKmZqwVE4?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>            </div>
+            <div class="main__info__bottom">
+              <h3></h3>
+              <div class="main__info__bottom__txt">
+                <h3>Столица:</h3><p>Мале</p>
+              </div>
+              <div class="main__info__bottom__txt">
+                <h3>Язык:</h3><p>официальный язык – Мальдивский, но широко используется английский.</p>
+              </div>
+              <div class="main__info__bottom__txt">
+                <h3>Религия:</h3><p>Ислам является государственной религией, но очень уважительно относятся к христианству.</p>
+              </div>
+              <div class="main__info__bottom__txt">
+                <h3>Национальная валюта:</h3><p>Мальдивская руфия</p>
+              </div>
+              <div class="main__info__bottom__txt">
+                <h3>Время:</h3><p> отстает от алматинского на 1 час.</p>
+              </div>
+            </div>
+          </section>
+      </main>
+      <script src="../../../js/get_call_script.js"></script>
+      <script src="../../../js/submit.js"></script>
+      <script src="../../../'js/phoneinput.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
