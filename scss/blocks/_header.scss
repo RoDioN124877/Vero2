@@ -1,3 +1,4 @@
+
 header{
     min-height: 110px;
     width: 100%;
@@ -78,4 +79,107 @@ header{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media(max-width: 420px){
+    header{
+        min-height: 110px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        background: linear-gradient(90deg, #fcd1e0, #FDD1E0, #f8baf4);
+    
+        .header__left{
+            display: flex;
+            flex-direction: column;
+            .collapse {
+                width: 180px;
+                &:not(.show) {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            .log{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                padding-top: 20px;
+                img{
+                    width: 180px;
+                }
+            }
+        }
+        .header___right{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            nav{
+                display: flex;
+                align-items: center;
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    .phone{
+                        position: relative;
+                        color: rgb(0, 0, 0);
+                        margin-left: 15px;
+                        &::before{
+                            content: "";
+                            width: 15px;
+                            height: 15px;
+                            position: absolute;
+                            background-image: url("../img/header/call.png");
+                            background-size: 100%;
+                            left: -20px;
+                        }
+                    }
+                    li{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            img{
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            button{
+                width: 150px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: transparent; /* Прозрачный фон кнопки */
+                color: black; /* Цвет текста черный */
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #000000; /* Обводка кнопки */
+                &:hover{
+                    transition: 0.7s;
+                    transform: scale(1.05);          
+                }
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .travel__img{
+        width: 30px;
+        height: 20px;
+    }
+    .about__img{
+        width: 20px;
+        height: 20px;
+    }
+    .dropdown-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-link{
+        width: 180px;
+    }
 }

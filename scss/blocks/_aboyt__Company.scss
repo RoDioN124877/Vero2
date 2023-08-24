@@ -1,0 +1,12 @@
+.aboyt__company{
+    display: flex;
+    flex-direction: column;
+    gap :100px;
+    .ab__block{
+        h1{
+                @include font_settings(600,26px,normal);
+                margin-bottom: 20px;
+            }
+    }
+    
+}
