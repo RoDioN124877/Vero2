@@ -153,6 +153,82 @@ table {
   transform: scale(1.05);
 }
 
+@media (max-width: 420px) {
+  .get__call__conteiner {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    display: none;
+    align-items: center;
+  }
+  .get__call__conteiner .get__call {
+    width: 350px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+  }
+  .get__call__conteiner .get__call .get__call__header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #fcd1e0, #FDD1E0, #f8baf4);
+    border-radius: 20px 20px 0 0;
+    padding: 20px 20px 5px 20px;
+  }
+  .get__call__conteiner .get__call .get__call__header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .get__call__conteiner .get__call .get__call__header .text h2 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: normal;
+  }
+  .get__call__conteiner .get__call .get__call__header img {
+    width: 115px;
+  }
+  .get__call__conteiner .get__call .get__call__main {
+    padding: 20px 20px 50px 20px;
+  }
+  .get__call__conteiner .get__call .get__call__main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .get__call__conteiner .get__call .get__call__main form select {
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+  .get__call__conteiner .get__call .get__call__main form input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+  .get__call__conteiner .get__call .get__call__main form button {
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: transparent; /* Прозрачный фон кнопки */
+    color: black; /* Цвет текста черный */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000000; /* Обводка кнопки */
+  }
+  .get__call__conteiner .get__call .get__call__main form button:hover {
+    transition: 0.7s;
+    transform: scale(1.05);
+  }
+}
 header {
   min-height: 110px;
   width: 100%;
@@ -331,6 +407,7 @@ header .header___right button:hover {
   }
   .nav-link {
     width: 180px;
+    text-align: center;
   }
 }
 .cor__conteiner .carousel {
