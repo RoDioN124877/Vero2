@@ -1,0 +1,132 @@
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: rgb(255,237,244);
+    background: linear-gradient(90deg, rgba(255,237,244,1) 0%, rgba(255,195,255,1) 100%);    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .block{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .logo{
+            img{
+                width: 180px;
+            }
+        }
+        ul{
+            li{
+                a{
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: transparent; /* Прозрачный фон кнопки */
+            color: black; /* Цвет текста черный */
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #000000; /* Обводка кнопки */
+            &:hover{
+                transition: 0.7s;
+                transform: scale(1.05);          
+            }
+        }
+    }
+    .block__about{
+        ul{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .block__button,.block__logo{
+        justify-content: center
+    }
+    .block__social{
+        ul{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+}
+
+@media(max-width: 420px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        background: rgb(255,237,244);
+        background: linear-gradient(90deg, rgba(255,237,244,1) 0%, rgba(255,195,255,1) 100%);    
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .block{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .logo{
+                img{
+                    width: 180px;
+                }
+            }
+            ul{
+                li{
+                    a{
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+            button{
+                width: 150px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: transparent; /* Прозрачный фон кнопки */
+                color: black; /* Цвет текста черный */
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #000000; /* Обводка кнопки */
+                &:hover{
+                    transition: 0.7s;
+                    transform: scale(1.05);          
+                }
+            }
+        }
+        .block__about{
+            ul{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        .block__button,.block__logo{
+            justify-content: center
+        }
+        .block__social{
+            ul{
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    
+    }
+}
