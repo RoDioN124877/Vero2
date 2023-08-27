@@ -1,0 +1,21 @@
+.conteiner__reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    .block{
+        border: 1px solid rgb(163, 163, 163);
+        padding: 10px;
+        border-radius: 20px;
+        .block__header{
+            border-bottom: 1px solid rgb(163, 163, 163);
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            h3{
+                @include font_settings(700,18px,normal)
+            }
+        }
+    }
+}
