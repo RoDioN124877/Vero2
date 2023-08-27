@@ -599,6 +599,31 @@ header .header___right button:hover {
   margin-bottom: 20px;
 }
 
+.partners__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.partners__conteiner .block {
+  display: flex;
+  flex-direction: column;
+}
+.partners__conteiner .block a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+.partners__conteiner .block a img {
+  width: 150px;
+}
+.partners__conteiner .block a h3 {
+  color: #000000;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -616,6 +641,18 @@ footer .block {
 }
 footer .block .logo img {
   width: 180px;
+}
+footer .block h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+}
+footer .block ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+footer .block ul li a:hover {
+  opacity: 0.9;
 }
 footer .block ul li a img {
   width: 25px;

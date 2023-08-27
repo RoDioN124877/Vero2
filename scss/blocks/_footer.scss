@@ -16,9 +16,17 @@ footer{
                 width: 180px;
             }
         }
+        h5{
+            @include font_settings(400,20px,normal);
+        }
         ul{
             li{
                 a{
+                    color: #000000;
+                    text-decoration: none;
+                    &:hover{
+                        opacity: 0.9;
+                    }
                     img{
                         width: 25px;
                         height: 25px;
