@@ -43,6 +43,7 @@
                 padding-bottom: 20px;
             }
         }
+        
     }
     .main__info__bottom{
         .main__info__bottom__txt{
@@ -57,5 +58,18 @@
 @media(max-width: 420px){
     .main{
         width: 70%;
+    }
+    .main__info__video{
+        width: 300px;
+    }
+    .main__info__bottom__txt{
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 200px;
+        }
+    }
+    iframe{
+        width: 190px;
     }
 }
